@@ -1,0 +1,31 @@
+{
+  "django": {
+    "pythonPath": "/Users/zahidshabbir/anaconda3/bin/python",
+    "settingsModule": "myproject.settings",
+    "windows.zoomlevel": 6,
+    "python.languageServer": "pylance",
+    "files.associations": {
+      "**/*.html": "html",
+      "**/templates/**/*.html": "django-html",
+      "**/templates/**/*": "django-txt",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+      "**/views/**/*.html": "django-html",
+      "*.tpl": "django-html"
+    },
+    "emmet.includeLanguages": {
+      "django-html": "html"
+    },
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Extension",
+        "type": "extensionHost",
+        "request": "launch",
+        "runtimeExecutable": "${execPath}",
+        "args": [
+          "--extensionDevelopmentPath=${workspaceFolder}"
+        ]
+      }
+    ]
+  }
+}

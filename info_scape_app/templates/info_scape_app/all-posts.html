@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static '/info_scape_app/post.css' %}" />
+  <link rel="stylesheet" href="{% static '/info_scape_app/all-posts.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <section id="all-posts">
+    <h2>My collection of posts</h2>
+    <ul>
+      {% for post in posts %}
+        {% include 'info_scape_app/includes/post.html' %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

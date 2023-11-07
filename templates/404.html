@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}
+  Page Not Found
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'your-css-file.css' %}" />
+  <style>
+    /* Add your custom CSS styles here */
+    .error-message {
+      font-size: 24px;
+      color: #ff0000;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="error-message">
+    <p>Sorry, the page you are looking for doesn't exist.</p>
+  </div>
+{% endblock %}
